@@ -1,0 +1,6 @@
+{
+    "names": [
+        "filtervcf"
+    ],
+    "wdl": "filtervcf.wdl"
+}

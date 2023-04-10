@@ -1,0 +1,67 @@
+[
+    {
+        "arguments": {
+            "mrdetect.plasmabam": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Ct_T_WG.chr21.bam",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "mrdetect.plasmabai": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Ct_T_WG.chr21.bam.bai",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "mrdetect.detectSample.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
+            "mrdetect.detectControl.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
+            "mrdetect.controlFileList": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBC.chr21.bam.list",
+            "mrdetect.outputFileNamePrefix": "TGL49_0143_Ct_T_WG",
+            "mrdetect.tumorSampleName": "TGL49_0143_Br_P_T-92",
+            "mrdetect.filterVCF.tumorVCFfilter": null,
+            "mrdetect.filterVCF.tumorVAF": null,
+            "mrdetect.filterVCF.genome": null,
+            "mrdetect.filterVCF.difficultRegions": null,
+            "mrdetect.filterVCF.modules": null,
+            "mrdetect.filterVCF.jobMemory": null,
+            "mrdetect.filterVCF.threads": null,
+            "mrdetect.filterVCF.timeout": null
+     },
+        "description": "filter workflow test",
+        "engineArguments": {
+          "write_to_cache": false,
+          "read_from_cache": false
+        },
+        "id": "TGL49_0143Test",
+        "metadata": {
+            "mrdetect.snpcount": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_filtervcf_TGL49_0143Test_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/filtervcf/1.0/output_metrics/TGL49_0143Test.metrics",
+                "type": "script"
+            }  
+        ]
+    } 
+]
