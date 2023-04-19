@@ -1,9 +1,9 @@
 [
     {
         "arguments": {
-            "mrdetect.plasmabam": {
+            "filtervcf.tumorvcf": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Ct_T_WG.chr21.bam",
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -13,9 +13,9 @@
                 },
                 "type": "EXTERNAL"
             },
-            "mrdetect.plasmabai": {
+            "filtervcf.tumorvcfindex": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Ct_T_WG.chr21.bam.bai",
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz.tbi",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -25,19 +25,18 @@
                 },
                 "type": "EXTERNAL"
             },
-            "mrdetect.detectSample.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
-            "mrdetect.detectControl.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
-            "mrdetect.controlFileList": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBC.chr21.bam.list",
-            "mrdetect.outputFileNamePrefix": "TGL49_0143_Ct_T_WG",
-            "mrdetect.tumorSampleName": "TGL49_0143_Br_P_T-92",
-            "mrdetect.filterVCF.tumorVCFfilter": null,
-            "mrdetect.filterVCF.tumorVAF": null,
-            "mrdetect.filterVCF.genome": null,
-            "mrdetect.filterVCF.difficultRegions": null,
-            "mrdetect.filterVCF.modules": null,
-            "mrdetect.filterVCF.jobMemory": null,
-            "mrdetect.filterVCF.threads": null,
-            "mrdetect.filterVCF.timeout": null
+            "filtervcf.detectSample.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
+            "filtervcf.detectControl.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
+            "filtervcf.controlFileList": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBC.chr21.bam.list",
+            "filtervcf.tumorSampleName": "TGL49_0143_Br_P_T-92",
+            "filtervcf.filterVCF.tumorVCFfilter": null,
+            "filtervcf.filterVCF.tumorVAF": null,
+            "filtervcf.filterVCF.genome": null,
+            "filtervcf.filterVCF.difficultRegions": null,
+            "filtervcf.filterVCF.modules": null,
+            "filtervcf.filterVCF.jobMemory": null,
+            "filtervcf.filterVCF.threads": null,
+            "filtervcf.filterVCF.timeout": null
      },
         "description": "filter workflow test",
         "engineArguments": {
@@ -46,7 +45,7 @@
         },
         "id": "TGL49_0143Test",
         "metadata": {
-            "mrdetect.snpcount": {
+            "filtervcf.snpcount": {
                 "contents": [
                     {
                         "outputDirectory": "@SCRATCH@/@DATE@_Workflow_filtervcf_TGL49_0143Test_@JENKINSID@"
