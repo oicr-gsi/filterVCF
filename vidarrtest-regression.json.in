@@ -1,0 +1,63 @@
+[
+    {
+        "arguments": {
+            "filtervcf.tumorvcf": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "filtervcf.tumorvcfindex": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz.tbi",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "filtervcf.tumorSampleName": "TGL49_0143_Br_P_T-92",
+            "filtervcf.filterVCF.tumorVCFfilter": null,
+            "filtervcf.filterVCF.tumorVAF": null,
+            "filtervcf.filterVCF.genome": null,
+            "filtervcf.filterVCF.difficultRegions": null,
+            "filtervcf.filterVCF.modules": null,
+            "filtervcf.filterVCF.jobMemory": null,
+            "filtervcf.filterVCF.threads": null,
+            "filtervcf.filterVCF.timeout": null
+     },
+        "description": "filter workflow test",
+        "engineArguments": {
+          "write_to_cache": false,
+          "read_from_cache": false
+        },
+        "id": "TGL49_0143Test",
+        "metadata": {
+            "filtervcf.snpcount": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_filtervcf_TGL49_0143Test_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/filtervcf/1.0/output_metrics/TGL49_0143Test.metrics",
+                "type": "script"
+            }  
+        ]
+    } 
+]
