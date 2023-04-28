@@ -12,7 +12,6 @@ workflow filtervcf {
 		tumorvcf: "tumor vcf file, bgzip"
 		tumorvcfindex: "tumor vcf index file"
 		tumorSampleName: "ID for WGS tumor sample, must match .vcf header"
-		controlFileList: "tab seperated list of bam and bai files for healthy blood controls"
 	}
 
 	call filterVCF {
@@ -33,16 +32,6 @@ workflow filtervcf {
 				url: "https://github.com/samtools/bcftools"
 			}
 		]
-		output_meta: {
-			snvDetectionResult: "Result from SNV detection incl sample HBCs",
-			final_call: "Final file of mrdetect results",
-			snvDetectionVAF: "VAF from SNV detection for sample",
-			snpcount: "number of SNPs in vcf after filtering"
-		}
-	}
-	output {
-		File snpcount = filterVCF.snpcount
-		File filteredvcf = filterVCF.filteredvcf
 	}
 }
 

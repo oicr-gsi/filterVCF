@@ -25,9 +25,6 @@
                 },
                 "type": "EXTERNAL"
             },
-            "filtervcf.detectSample.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
-            "filtervcf.detectControl.blocklist": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBCs.blacklist.chr21.vcf.gz",
-            "filtervcf.controlFileList": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/HBC.chr21.bam.list",
             "filtervcf.tumorSampleName": "TGL49_0143_Br_P_T-92",
             "filtervcf.filterVCF.tumorVCFfilter": null,
             "filtervcf.filterVCF.tumorVAF": null,

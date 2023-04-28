@@ -1,6 +1,5 @@
 {
   "filtervcf.tumorvcf": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz",
-  "filtervcf.outputFileNamePrefix": "TGL49_0143_Ct_T_WG",
   "filtervcf.tumorSampleName": "TGL49_0143_Br_P_T-92",
   "filtervcf.tumorvcfindex": "/.mounts/labs/gsi/testdata/filtervcf/1.0/input_data/TGL49_0143_Br_P_WG.chr21.vcf.gz.tbi"
 }
